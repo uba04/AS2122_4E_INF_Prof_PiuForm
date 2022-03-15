@@ -15,9 +15,9 @@ namespace AS2122_4E_INF_Prof_PiuForm
 
         string nome;
 
-        public string Indirizzo { get;}
-        public string Citta { get;}
-        public string Telefono { get; }
+        public string Indirizzo { get; }
+        public string Citta { get; }
+        public string Telefono { get;}
 
         public frmDati(string nome)
         {
@@ -39,6 +39,9 @@ namespace AS2122_4E_INF_Prof_PiuForm
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            Indirizzo = txtIndirizzo.Text;
+            Citta = txtCitta.Text;
+            Telefono = txtTelefono.Text;
 
             // chiudi il form
             Close();
@@ -46,6 +49,9 @@ namespace AS2122_4E_INF_Prof_PiuForm
 
         private void btnAnnulla_Click(object sender, EventArgs e)
         {
+            Indirizzo = "";
+            Citta = "";
+            Telefono = "";
 
             // chiudi il form
             Close();
