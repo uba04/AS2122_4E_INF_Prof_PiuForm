@@ -15,9 +15,9 @@ namespace AS2122_4E_INF_Prof_PiuForm
 
         string nome;
 
-        public string Indirizzo { get; }
-        public string Citta { get; }
-        public string Telefono { get;}
+        public string Indirizzo { get;}
+        public string Citta { get;}
+        public string Telefono { get; }
 
         public frmDati(string nome)
         {
